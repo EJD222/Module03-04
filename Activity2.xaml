@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Activity2">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="EmployeeView"
+                      ItemsSource="{Binding Employees}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding DisplayName}" 
+                                  TextColor="Black"
+                                  Detail="{Binding Position}"
+                                  DetailColor="Red">
+
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Delete" Clicked="MenuDelete"/>
+                                <MenuItem Text="MORE" Clicked="MenuMore"/>
+                            </TextCell.ContextActions>
+
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

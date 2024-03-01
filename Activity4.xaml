@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Activity4">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="40" 
+                        VerticalOptions="CenterAndExpand">
+
+            <Image Source="image2.png" 
+                   HeightRequest="{OnPlatform iOS=500, Android=500}"
+                   AbsoluteLayout.LayoutBounds="0,-30,1,50"
+                   AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+
+            <Entry Placeholder="Username"
+                   AbsoluteLayout.LayoutBounds="0,20, 1, 40"
+                   AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+
+            <Entry Placeholder="Password"
+                   AbsoluteLayout.LayoutBounds="0,60, 1, 40"
+                   AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+
+            <Entry Placeholder="Name"
+                   AbsoluteLayout.LayoutBounds="0,100, 0.5, 40"
+                   AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+
+            <Entry Placeholder="Phone"
+                   AbsoluteLayout.LayoutBounds="1,100, 0.5, 40"
+                   AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+
+            <Button AbsoluteLayout.LayoutBounds="0, 150, 1, 40"
+                    AbsoluteLayout.LayoutFlags="WidthProportional"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Register"
+                    TextColor="Black"
+                    BackgroundColor="Red"/>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
